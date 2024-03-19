@@ -1,6 +1,6 @@
 <?php
 
-$pwdLength = $_GET['length'];
+$pwdLength = isset($_GET['length']);
 
 function generatePassword($pwdLength)
 {
