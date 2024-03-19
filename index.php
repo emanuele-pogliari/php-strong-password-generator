@@ -1,6 +1,10 @@
 <?php
 include './partials/function.php';
 
+session_start();
+
+$_SESSION["password"] = generatePassword($pwdLength);
+
 ?>
 
 <!DOCTYPE html>
