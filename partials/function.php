@@ -1,4 +1,5 @@
 <?php
+
 $pwdLength = $_GET['length'];
 
 function generatePassword($pwdLength)
@@ -8,4 +9,4 @@ function generatePassword($pwdLength)
         $pwd .= chr(rand(33, 126));
     }
     return $pwd;
-}
+};
