@@ -18,7 +18,7 @@ $_SESSION["password"] = generatePassword($pwdLength);
 
 <body>
 
-    <form method="GET">
+    <form method="GET" action="./results.php">
         <input type="number" name="length" placeholder="Enter the length of your password to be generated">
         <button type="submit">Generate</button>
         <p><?php echo generatePassword($pwdLength) ?></p>
